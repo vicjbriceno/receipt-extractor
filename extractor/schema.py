@@ -11,7 +11,7 @@ class LineItem(BaseModel):
 
 
 class Receipt(BaseModel):
-    items: list[LineItem] | None = None
+    items: list[LineItem]
     commerce: str
     date: str | None = None
     currency: str | None = None
